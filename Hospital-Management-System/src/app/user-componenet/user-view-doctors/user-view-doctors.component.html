@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Doctors - Wellness Hospital</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.2/css/bootstrap.min.css">
+
+</head>
+<header>
+  <h1>Wellness Hospital</h1>
+  <nav>
+    <a href="http://localhost:4200/user-Home">Home</a>&nbsp;
+  </nav>
+</header>
+<body style="background-image: url(./assets/background.jpg);">
+    <h1>Doctors</h1>
+    <table>
+        <tbody>
+            <tr *ngFor="let doctor of doctors">
+  <div class="container">
+    
+    
+    <div class="row">
+      <div class="col-md-6 col-lg-4">
+        <div class="doctor-tile">
+          <div class="doctor-photo">
+            <img src="./assets/doctor-men-cartoon.jpg" alt="Doctor Photo">
+          </div>
+          <h4>Dr. {{doctor.doctorfirstname}} &nbsp; {{doctor.doctorlastname}}</h4>
+          <p><strong>Email:</strong> {{doctor.doctoremail}}</p>
+          <p><strong>Phone:</strong> {{doctor.doctormobile}}</p>
+        </div>
+      </div>
+    
+      
+
+      <!-- Add more doctor tiles here -->
+
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.2/js/bootstrap.bundle.min.js"></script>
+
+</tr>
+</tbody>
+
+</table>
+
+<footer>
+  <nav>
+    <ul>
+      <li><a href="#">Privacy Policy</a></li>
+      <li><a href="#">Terms of Service</a></li>
+      <li><a href="#">FAQ</a></li>
+    </ul>
+  </nav>
+  <p>&copy; 2023 WELLNESS HOSPITAL. All rights reserved.</p>
+</footer>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+<nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+    <ul class = "navbar-nav">
+        <li class = "nav-item">
+            <a routerLink="Create-Doctor" routerLinkActive="active" class="nav-link" >Add Doctor</a>
+        </li>
+    </ul>
+  </nav>
+
+
+
+
+<h1 class="text-center">Doctors</h1>
+
+<h2> Doctor List</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <td><b>First Name</b></td>
+            <td><b>Last Name</b></td>
+            <td><b>Email</b></td>
+            <td><b>Mobile Number</b></td>
+            <td><b>Password</b></td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let doctor of doctors">
+            <td>{{doctor.doctorfirstname}}</td>
+            <td>{{doctor.doctorlastname}}</td>
+            <td>{{doctor.doctoremail}}</td>
+            <td>{{doctor.doctormobile}}</td>
+            <td>{{doctor.doctorpassword}}</td>
+
+
+            <td>
+                <button (click) = "updateDoctor(doctor.doctorid)" class = "btn btn-info"> Update</button>
+                <button (click) = "DeleteDoctor(doctor.doctorid)" class = "btn btn-danger" style="margin-left: 10px"> Delete</button>
+                <button (click) = "DoctorDetails(doctor.doctorid)" class = "btn btn-info" style="margin-left: 10px"> View</button> 
+                
+            </td>
+        </tr>
+    </tbody>
+
+</table>
+
+-->

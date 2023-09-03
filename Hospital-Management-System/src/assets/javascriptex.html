@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript Example</title>
+    <script>
+        var name;
+        var m1,m2,m3,m4,m5,tot,avg;
+        name=prompt("Enter Your Name");
+        m1=parseInt(prompt("Enter Your M1"));
+        m2=parseInt(prompt("Enter Your M2"));
+        m3=parseInt(prompt("Enter Your M3"));
+        m4=parseInt(prompt("Enter Your M4"));
+        m5=parseInt(prompt("Enter Your M5"));
+
+        tot=parseInt(m1)+parseInt(m2)+parseInt(m3)+parseInt(m4)+parseInt(m5);
+        avg=tot/5
+
+        document.write("Name : "+name+"<br>");
+        document.write("marks1 : "+m1+"<br>");
+        document.write("marks2 : "+m2+"<br>");
+        document.write("marks3 : "+m3+"<br>");
+        document.write("marks4 : "+m4+"<br>");
+        document.write("marks5 : "+m5+"<br>");
+        document.write("TOTAL : "+tot+"<br>");
+        document.write("Average : "+avg+"<br>");
+
+        if(parseInt(avg)>=90)
+        {
+            document.write("Gread : A+");
+        }
+        else if(parseInt(avg)<90 && parseInt(avg)>70 )
+        {
+            document.write("Gread : A ");
+        }
+        else if(parseInt(avg)<70 && parseInt(avg)> 60 )
+        {
+            document.write("Gread : B+ ");
+        }
+        else if(parseInt(avg)<60 && parseInt(avg)> 50 )
+        {
+            document.write("Gread : B ");
+        }
+        else if(parseInt(avg)<50 && parseInt(avg)> 40)
+        {
+            document.write("Gread : c ");
+        }
+        else if(parseInt(avg)< 40 && parseInt(avg)> 35 )
+        {
+            document.write("Gread : PASS ");
+        }
+        else(parseInt(avg)< 35)
+        {
+            document.write("Gread : Fail ");
+        }
+
+
+
+
+     </script>   
+
+</head>
+<body>
+
+    <h1>Java Script Example</h1>
+    <button>Submit</button>
+    
+</body>
+</html>

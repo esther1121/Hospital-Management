@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Doctors - Wellness Hospital</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.2/css/bootstrap.min.css">
+
+</head>
+<header>
+  <h1>Wellness Hospital</h1>
+  <nav>
+    <a href="http://localhost:4200/Home">Home</a>&nbsp;
+    <a routerLink="Create-Patient" routerLinkActive="active" class="nav-link" >Add Patient</a>
+  </nav>
+</header>
+<body style="background-image: url(./assets/background.jpg);">
+    <h1>Patients</h1>
+    <table>
+        <tbody>
+            <tr *ngFor="let patient of patients">
+  <div class="container">
+    
+    
+    <div class="row">
+      <div class="col-md-6 col-lg-4">
+        <div class="doctor-tile">
+          <div class="doctor-photo">
+            <img src="./assets/patient-icon.png" alt="patient Photo">
+          </div>
+          <h4>{{patient.patientfirstname}} &nbsp; {{patient.patientlastname}}</h4>
+          <p><strong>Email:</strong> <td>{{patient.patientemail}}</p>
+          <p><strong>Phone:</strong> <td>{{patient.patientmobile}}</p>
+          <div class="text-center">
+            <button (click) = "updatePatient(patient.patientid)" class="btn btn-primary" style="margin-right: 11px;">Update</button>
+            <button (click) = "DeletePatient(patient.patientid)" class="btn btn-danger" style="margin-right: 11px;">Delete</button>
+            <button (click) = "PatientDetails(patient.patientid)" class="btn btn-success" style="margin-right: 11px;">View</button>
+          </div>
+        </div>
+      </div>
+    
+      
+
+      <!-- Add more doctor tiles here -->
+
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.2/js/bootstrap.bundle.min.js"></script>
+
+</tr>
+</tbody>
+
+</table>
+
+<footer>
+  <nav>
+    <ul>
+      <li><a href="#">Privacy Policy</a></li>
+      <li><a href="#">Terms of Service</a></li>
+      <li><a href="#">FAQ</a></li>
+    </ul>
+  </nav>
+  <p>&copy; 2023 WELLNESS HOSPITAL. All rights reserved.</p>
+</footer>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+<h2> Patient List</h2>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <td>First Name</td>
+            <td>Last Name</td>
+            <td>Email</td>
+            <td>Mobile Number</td>
+            <td>Password</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let patient of patients">
+            <td>{{patient.patientfirstname}}</td>
+            <td>{{patient.patientlastname}}</td>
+            <td>{{patient.patientemail}}</td>
+            <td>{{patient.patientmobile}}</td>
+            <td>{{patient.patientpassword}}</td>
+
+
+        </tr>
+    </tbody>
+
+
+
+
+</table>
+-->

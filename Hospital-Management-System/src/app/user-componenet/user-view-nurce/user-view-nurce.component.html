@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Doctors - Wellness Hospital</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.2/css/bootstrap.min.css">
+
+</head>
+<header>
+  <h1>Wellness Hospital</h1>
+  <nav>
+    <a href="http://localhost:4200/user-Home">Home</a>&nbsp;
+  </nav>
+</header>
+<body style="background-image: url(./assets/background.jpg);">
+    <h1>NURSES</h1>
+    <table>
+        <tbody>
+            <tr *ngFor="let nurse of nueses">
+  <div class="container">
+    
+    
+    <div class="row">
+      <div class="col-md-6 col-lg-4">
+        <div class="doctor-tile">
+          <div class="doctor-photo">
+            <img src="./assets/nurse-icon.jpg" alt="Doctor Photo">
+          </div>
+          <h4>{{nurse.nursefirstname}}&nbsp;{{nurse.nursefirstname}}</h4>
+          <p><strong>Email:</strong> {{nurse.nurseemail}}</p>
+          <p><strong>Phone:</strong> {{nurse.nursemobile}}</p>
+          
+        </div>
+      </div>
+    
+      
+
+      <!-- Add more doctor tiles here -->
+
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.2/js/bootstrap.bundle.min.js"></script>
+
+</tr>
+</tbody>
+
+</table>
+
+<footer>
+  <nav>
+    <ul>
+      <li><a href="#">Privacy Policy</a></li>
+      <li><a href="#">Terms of Service</a></li>
+      <li><a href="#">FAQ</a></li>
+    </ul>
+  </nav>
+  <p>&copy; 2023 WELLNESS HOSPITAL. All rights reserved.</p>
+</footer>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+<h2> Nurse List</h2>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <td>First Name</td>
+            <td>Last Name</td>
+            <td>Email</td>
+            <td>Mobile Number</td>
+            <td>Password</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let nurse of nueses">
+            <td>{{nurse.nursefirstname}}</td>
+            <td>{{nurse.nurselastname}}</td>
+            <td>{{nurse.nurseemail}}</td>
+            <td>{{nurse.nursemobile}}</td>
+            <td>{{nurse.nursepassword}}</td>
+
+            
+
+        </tr>
+    </tbody>
+
+
+
+
+</table>
+
+
+
+-->

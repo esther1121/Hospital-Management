@@ -1,0 +1,217 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hospital Website</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>-->
+</head>
+<body>
+  
+  <header>
+    <div class="logo">
+      <img src="./assets/hospital-logo.gif" alt="Hospital Logo">
+    </div>
+    <nav >
+      <ul>
+        <li><a routerLink="Home" routerLinkActive="active">Home</a></li>
+        <li><a routerLink="user-about-us" routerLinkActive="active">About Us</a></li>
+        <li><a routerLink="Doctor" routerLinkActive="active">Doctors</a></li>
+        <li><a routerLink="Nurse" routerLinkActive="active">Nurses</a></li>
+        <li><a href="#">Log-out</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section class="hero">
+    <div class="hero-content">
+      <h1>WELCOME TO WELLNESS HOSPITAL</h1>
+      <p>"YOUR WELLNESS,OUR MISSION"</p>
+      <a routerLink="appointment" routerLinkActive="active" class="cta-button">Book an Appointment</a>
+    </div>
+  </section>
+
+    <div class="doctorimage">
+      <img src="./assets/doctor banner.png" class="img-rounded"  height="450px" width="auto">
+    </div>
+  
+    <div class="servicehead">
+      <h2> Explore our Centres of Clinical Excellence</h2>
+    </div>
+  <section class="servicestiles">
+    
+    <div class="table-container">
+      <div class="cell">
+        <div class="cell-content">
+          <img class="image" src="./assets/cardiology_icon.svg" alt="Image 1">
+          <div class="name">Cardiology</div>
+        </div>
+      </div>
+      <div class="cell">
+        <div class="cell-content">
+          <img class="image" src="./assets/neurology.svg" alt="Image 2">
+          <div class="name">neurology</div>
+        </div>
+      </div>
+      <div class="cell">
+        <div class="cell-content">
+          <img class="image" src="./assets/gastroenterology.svg" alt="Image 3">
+          <div class="name">gastroenterology</div>
+        </div>
+      </div>
+      <div class="cell">
+        <div class="cell-content">
+          <img class="image" src="./assets/orthopaedic.svg" alt="Image 4">
+          <div class="name">orthopaedic</div>
+        </div>
+      </div>
+      <div class="cell">
+        <div class="cell-content">
+          <img class="image" src="./assets/oncology_icon.svg" alt="Image 5">
+          <div class="name">oncology</div>
+        </div>
+      </div>
+        <div class="cell">
+        <div class="cell-content">
+          <img class="image" src="./assets/gynecology.svg" alt="Image 5">
+          <div class="name">gynecology</div>
+        </div>
+      </div>
+          <div class="cell">
+        <div class="cell-content">
+          <img class="image" src="./assets/dermatology.svg" alt="Image 5">
+          <div class="name">dermatology</div>
+
+        </div>
+      </div>
+            <div class="cell">
+        <div class="cell-content">
+          <img class="image" src="./assets/ophthalmology.svg" alt="Image 5">
+          <div class="name">ophthalmology</div>
+        </div>
+      </div>
+              <div class="cell">
+        <div class="cell-content">
+          <img class="image" src="./assets/paediatricurology.svg" alt="Image 5">
+          <div class="name">Name 5</div>
+        </div>
+      </div>
+                <div class="cell">
+        <div class="cell-content">
+          <img class="image" src="./assets/endocrinology.svg" alt="Image 5">
+          <div class="name">endocrinology</div>
+
+        </div>
+      </div>
+                  <div class="cell">
+        <div class="cell-content">
+          <img class="image" src="./assets/urology.svg" alt="Image 5">
+          <div class="name">urology</div>
+        </div>
+      </div>
+                    <div class="cell">
+        <div class="cell-content">
+          <img class="image" src="./assets/nephrology.svg" alt="Image 5">
+          <div class="name">nephrology</div>
+        </div>
+      </div>
+                      <div class="cell">
+        <div class="cell-content">
+          <img class="image" src="./assets/pulmonology.svg" alt="Image 5">
+          <div class="name">pulmonology</div>
+   
+        </div>
+      </div>
+      <div class="cell">
+        <div class="cell-content">
+          <img class="image" src="./assets/rheumatology.svg" alt="Image 5">
+          <div class="name">rheumatology</div>
+        </div>
+      </div>
+       <div class="cell">
+        <div class="cell-content">
+          <img class="image" src="./assets/radiology.svg" alt="Image 5">
+          <div class="name">radiology</div>
+        </div>
+      </div>
+      <div class="cell">
+        <div class="cell-content">
+          <img class="image" src="./assets/plasticsurgery.svg" alt="Image 5">
+          <div class="name">plasticsurgery</div>
+        </div>
+      </div>
+      <!-- Repeat the above cell structure for additional tiles -->
+    </div>
+  </section>
+
+  <section class="doctors">
+    <h2>Our Doctors</h2>
+    <ul>
+      <li>
+        <img src="./assets/Dr.satish.jpg" alt="Doctor">
+        <br>
+        <h3>Dr. Satish Jain</h3>
+        <p>Cardiology</p>
+        <p>MD, PhD</p>
+        <a href="#">View Profile</a>
+      </li>
+      <li>
+        <img src="./assets/dr kavya.jpg" alt="Doctor">
+        <br>
+        <h3>Dr. Kavya Rathi</h3>
+        <p>Orthopedics</p>
+        <p>MD</p>
+        <a href="#">View Profile</a>
+      </li>
+    </ul>
+  </section>
+
+  <section class="testimonials">
+    <h2>Patient Testimonials</h2>
+    <div class="testimonial">
+      <img src="./assets/p1.jpg" alt="Patient">
+      <blockquote>
+        <p>"I had a great experience at the hospital. The doctors and staff were amazing!"</p>
+        <cite>- Ravi Gupta</cite>
+      </blockquote>
+    </div>
+    <div class="testimonial">
+      <img src="./assets/p2.jpg" alt="Patient">
+      <blockquote>
+        <p>"The care I received was exceptional. I highly recommend this hospital."</p>
+        <cite>- Nidhi Chawala</cite>
+      </blockquote>
+    </div>
+  </section>
+
+    <section class="contact">
+    <h2>Contact Us</h2>
+    <p>123 Hospital Street, City, Country</p>
+    <p>Phone: 123-456-7890</p>
+    <p>Email: info@hospital.com</p>
+    <h2>MAP</h2>
+    <div class="map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30263.284210191352!2d73.84229954999999!3d18.532944999999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c0791d785177%3A0x20d86a81ca743dc8!2sShivajinagar%2C%20Pune%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1689098119375!5m2!1sen!2sin"></iframe>
+    </div>
+    <div class="social-media">
+      <h2>Social Media</h2>
+      <a href="#"><img src="./assets/facebook.jpg" alt="Facebook"></a>
+      <a href="#"><img src="./assets/tweeter.jpg" alt="Twitter"></a>
+      <a href="#"><img src="./assets/instagram.jpg" alt="Instagram"></a>
+    </div>
+  </section>
+
+  <footer>
+    <nav>
+      <ul>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms of Service</a></li>
+        <li><a href="#">FAQ</a></li>
+      </ul>
+    </nav>
+    <p>&copy; 2023 WELLNESS HOSPITAL. All rights reserved.</p>
+  </footer>
+</body>
+</html> 
